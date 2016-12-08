@@ -8,7 +8,7 @@
 <meta content="en-us" http-equiv="Content-Language">
 <meta content="" name="Description"/>
 <meta content="" name="Keywords"/>
-<title>Seton Hall University - Base Template</title>
+<title><?php echo ($page_title ? $page_title . ' - ' : null) ?>Seton Hall University</title>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
