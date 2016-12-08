@@ -1,3 +1,9 @@
+<?php
+	require_once(dirname(__DIR__) . '/libs/paths.php');
+
+// NOTE: This code should be included WITHIN the <head></head> tags
+?>
+
 <footer id="footer">
 	<section class="row">
 		<div class="medium-9 columns">
