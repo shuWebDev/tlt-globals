@@ -12,5 +12,6 @@
 
 
 	define('URI_GLOBAL_CSS', '../globals/assets/css/app.min.css');
+	define('URI_GLOBAL_ASSETS', '../globals/assets/');
 	define('PATH_GLOBAL_VIEWS_DIR', '../globals/views/');
 ?>
