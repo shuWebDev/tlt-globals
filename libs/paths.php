@@ -11,6 +11,6 @@
 	// printf($_SERVER["DOCUMENT_ROOT"] . "<br>");
 
 
-	define('URI_GLOBAL_CSS', '/tlt-globals/assets/css/app.min.css');
-	define('PATH_GLOBAL_VIEWS_DIR', $_SERVER["DOCUMENT_ROOT"] .'/tlt-globals/views/');
+	define('URI_GLOBAL_CSS', '../globals/assets/css/app.min.css');
+	define('PATH_GLOBAL_VIEWS_DIR', '../globals/views/');
 ?>
