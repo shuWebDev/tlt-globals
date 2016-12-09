@@ -4,17 +4,19 @@
 // NOTE: This code should be included WITHIN the <head></head> tags
 ?>
 
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<meta content="en-us" http-equiv="Content-Language">
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title><?php echo ($page_title ? $page_title . ' - ' : null) ?>Seton Hall University</title>
 <meta content="" name="Description"/>
 <meta content="" name="Keywords"/>
-<title><?php echo ($page_title ? $page_title . ' - ' : null) ?>Seton Hall University</title>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+<!-- Foundation CSS -->
+<link href="<?php echo(URI_GLOBAL_VENDOR . 'foundation/css/foundation.min.css') ?>" media="screen" rel="stylesheet" type="text/css">
 
 <!-- Application CSS -->
 <link href="<?php echo(URI_GLOBAL_CSS) ?>" media="screen" rel="stylesheet" type="text/css">
-<!-- <link href="https://www.shu.edu/style/print.css" media="print" rel="stylesheet" type="text/css"/> -->
 
 <!-- TypeKit -->
 <!-- <script src="https://use.typekit.net/owz2qgk.js" type="text/javascript"></script> -->

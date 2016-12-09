@@ -11,7 +11,8 @@
 	// printf($_SERVER["DOCUMENT_ROOT"] . "<br>");
 
 
-	define('URI_GLOBAL_CSS', '../globals/assets/css/app.min.css');
+	define('URI_GLOBAL_CSS', '../globals/assets/css/app.css');
 	define('URI_GLOBAL_ASSETS', '../globals/assets/');
+	define('URI_GLOBAL_VENDOR', '../globals/vendor/');
 	define('PATH_GLOBAL_VIEWS_DIR', '../globals/views/');
 ?>
