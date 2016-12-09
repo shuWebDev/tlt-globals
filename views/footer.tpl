@@ -1,5 +1,5 @@
 <?php
-	require_once(dirname(__DIR__) . '/libs/paths.php');
+	require_once(dirname(__DIR__) . '/libs/config.php');
 
 // NOTE: This code should be included WITHIN the <head></head> tags
 ?>
