@@ -1,5 +1,7 @@
 <?php
-	require_once('../globals/libs/config.php');
+	require_once(dirname(__DIR__) .'/libs/config.php');
+
+	// echo 'scripts.tpl => ' . dirname(__DIR__) . '/libs/config.php';
 ?>
 
 <script src="<?php echo URI_GLOBAL_VENDOR . 'foundation/js/vendor/jquery.js' ?>"></script>

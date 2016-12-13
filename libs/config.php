@@ -1,18 +1,7 @@
 <?php
-
-	// echo getcwd() . PHP_EOL;
-	// $path_globals = dirname(__DIR__);
-	// $path_parts = pathinfo(__FILE__);
-	// $path_dirname = dirname(__FILE__);
-
-	// printf("<pre><code>" . print_r($path_parts) . "</code></pre><br>" . PHP_EOL);
-	// printf("<pre><code>" . $path_globals . "</code></pre><br>" . PHP_EOL);
-
-	// printf($_SERVER["DOCUMENT_ROOT"] . "<br>");
-
-
-	define('URI_GLOBAL_CSS', '../globals/assets/css/app.css');
-	define('URI_GLOBAL_ASSETS', '../globals/assets/');
-	define('URI_GLOBAL_VENDOR', '../globals/vendor/');
-	define('PATH_GLOBAL_VIEWS_DIR', '../globals/views/');
+	define('URI_GLOBAL_BASE', '/tlt/projects/'); // Should match what's on the server.
+	define('URI_GLOBAL_CSS', URI_GLOBAL_BASE . 'globals/assets/css/app.css');
+	define('URI_GLOBAL_ASSETS', URI_GLOBAL_BASE . 'globals/assets/');
+	define('URI_GLOBAL_VENDOR', URI_GLOBAL_BASE . 'globals/vendor/');
+	define('PATH_GLOBAL_VIEWS_DIR', dirname(__DIR__) . '/views/');
 ?>
