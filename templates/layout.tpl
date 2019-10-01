@@ -1,34 +1,31 @@
+<?php
+    // Get the config
+    require_once(dirname(__DIR__) . '/config/config.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-	<!-- Content Copyright Seton Hall University -->
-	<?php require('../templates/head.tpl') ?>
+    <?php require_once(PATH_GLOBAL_TEMPLATE_DIR . 'head.tpl') ?>
 
-	<body>
-		<!-- allow a user to go to the main content of the page -->
-		<a class="accessibility" href="#main">Skip to Content</a>
-		<div id="wrapper"  class="off-canvas-wrap" data-offcanvas>
-			<div class="inner-wrap">
-				<?php require('../templates/right-off-canvas-menu.tpl') ?>
-				<?php require('../templates/left-off-canvas-menu.tpl') ?>
+    <body>
+        <!-- allow a user to go to the main content of the page -->
+        <a class="accessibility" href="#main">Skip to Content</a>
+        <?php require(PATH_GLOBAL_TEMPLATE_DIR . 'header.tpl') ?>
 
-				<div class="w1">
-					<?php require('../templates/header.tpl') ?>
+        <main id="main" class="row">
+            <div class="medium-12 columns">
 
-					<main id="main" class="row">
-						<div class="medium-12 columns">
+                {{content}}
 
-							{{content}}
+            </div>
+        </main>
 
-						</div>
-					</main>
+        <?php require(PATH_GLOBAL_TEMPLATE_DIR . 'footer.tpl') ?>
 
-					<?php require('../templates/footer.tpl') ?>
-				</div>
-			</div>
-		</div>
-		<!-- allow a user to go to the top of the page -->
-		<!-- <a class="accessibility" href="#wrapper">Back to top</a> -->
-		<script src="./assets/js/frameworks.min.js"></script>
-		<script src="./assets/js/app.min.js"></script>
-	</body>
+        <!-- allow a user to go to the top of the page -->
+        <a class="accessibility" href="#wrapper">Back to top</a>
+
+        <script src="./assets/js/frameworks.min.js"></script>
+        <script src="./assets/js/app.min.js"></script>
+    </body>
 </html>
