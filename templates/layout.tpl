@@ -1,6 +1,8 @@
 <?php
     // Get the config
-    require_once(dirname(__DIR__) . '/config/config.php');
+    require_once dirname(__DIR__) . '/config/config.php';
+    require_once dirname(__DIR__) . '/vendor/autoload.php';
+    // require_once dirname(__DIR__) . '/vendor/twbs/bootstrap/dist/bootstrap.min.css';
 ?>
 
 <!DOCTYPE html>
