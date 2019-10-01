@@ -1,0 +1,17 @@
+{
+	"name": "shu/tlt-globals",
+	"description": "A static template library used to build any pages/sites that need to resemble shu.edu.",
+	"version": "1.0.0",
+	"type": "project",
+	"homepage": "https://github.com/shuWebDev/tlt-globals#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/shuWebDev/tlt-globals.git"
+	},
+	"require": {
+		"twbs/bootstrap": "^4.3"
+	},
+	"require-dev": {
+	},
+	"license": "MIT"
+}
