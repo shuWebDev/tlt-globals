@@ -20,7 +20,7 @@
 
         // NOTE: Add a place holder for the content area.
         if (!$content_main) {
-            $content_main = '<h3 class="alert subheader">Please add your content in the <code lang="php">$content_main</code> variable.</h3>';
+            $content_main = '<h4 class="alert subheader">Please add your content in the <code lang="php">$content_main</code> variable.</h4>';
         }
 
         // NOTE: Add the <head></head> section.
