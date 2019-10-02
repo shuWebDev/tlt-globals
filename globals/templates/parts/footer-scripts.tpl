@@ -5,3 +5,4 @@
 
 <script src="<?php echo $framework_scripts ?>"></script>
 <script src="<?php echo $template_scripts ?>"></script>
+<script src="<?php echo $application_scripts ?>"></script>

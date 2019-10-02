@@ -1,13 +1,16 @@
 <?php
     // NOTE: This code should be included WITHIN the <head></head> tags
+    // Add the extra metadata from the requesting page.
+    $extra_metadata = $page_metadata ? $page_metadata : null;
 ?>
 
 <title><?php echo $page_title ?>Seton Hall University</title>
 <meta charset="utf-8" />
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta content="" name="Description"/>
-<meta content="" name="Keywords"/>
+<meta content="<?php echo $page_description ?>" name="Description"/>
+<meta content="<?php echo $page_keywords ?>" name="Keywords"/>
+<?php echo $extra_metadata ?>
 
 <!-- Global CSS -->
 <link href="<?php echo $framework_styles ?>" media="screen" rel="stylesheet" type="text/css">
