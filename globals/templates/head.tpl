@@ -1,5 +1,5 @@
 <?php
-    require_once(dirname(__DIR__) . '/config/config.php');
+    // require_once(dirname(__DIR__) . '/config/config.php');
     $main_styles = URI_GLOBAL_ASSETS . '/scss/app.css';
 
 // NOTE: This code should be included WITHIN the <head></head> tags
@@ -12,8 +12,12 @@
 <meta content="" name="Description"/>
 <meta content="" name="Keywords"/>
 
+<!-- Global CSS -->
+<link href="<?php echo $framework_styles ?>" media="screen" rel="stylesheet" type="text/css">
+<link href="<?php echo $template_styles ?>" media="screen" rel="stylesheet" type="text/css">
+
 <!-- Application CSS -->
-<link href="<?php echo $main_styles ?>" media="screen" rel="stylesheet" type="text/css">
+<link href="<?php echo $application_styles ?>" media="screen" rel="stylesheet" type="text/css">
 
 <!-- Modernizr -->
 <!-- <script src="https://www.shu.edu/js/modernizr.min.js"></script> -->
