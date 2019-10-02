@@ -9,12 +9,9 @@
 		"url": "git+https://github.com/shuWebDev/tlt-globals.git"
 	},
 	"require": {
-		"twbs/bootstrap": "^4.3"
 	},
 	"require-dev": {
 	},
 	"license": "MIT",
-	"scripts": {
-		"server": "php -S 0.0.0.0:8000 -t public/"
-	}
+	"scripts": {}
 }
