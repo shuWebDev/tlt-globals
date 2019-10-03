@@ -25,8 +25,8 @@
     $page_title = null;
     $page_title_displayed = null;
     $template_nav = null;
-    $template_scripts = URI_GLOBAL_ASSETS . '/js/app.min.js';
-    $template_styles = URI_GLOBAL_ASSETS . '/css/app.css';
+    $template_scripts = URI_GLOBAL_ASSETS . '/js/bundle.js';
+    $template_styles = URI_GLOBAL_ASSETS . '/css/bundle.css';
 
     // NOTE: Include vendor specific "stuff"
     require_once dirname(__DIR__, 2) . '/vendor/autoload.php';

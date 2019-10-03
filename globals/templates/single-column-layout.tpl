@@ -25,7 +25,7 @@
 
         <?php require(PATH_GLOBAL_TEMPLATE_DIR . '/parts/header-default.tpl') ?>
 
-        <main id="main" class="row">
+        <main id="main" class="container">
             <div class="medium-12 columns">
                 <h2><?php
                     //! NOTE: This should be set in the project.
