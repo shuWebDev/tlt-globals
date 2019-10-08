@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-php": "php -S 0.0.0.0:8000 -t public/",
+    "start-php": "php -S 0.0.0.0:8000",
     "watch": "webpack --watch --progress"
   },
   "repository": {
