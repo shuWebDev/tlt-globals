@@ -1,0 +1,20 @@
+// NOTE: Include all of Bootstrap and custom overrides
+@import "~bootstrap/scss/bootstrap.scss";
+
+// NOTE: Alternatively, you may import parts of Boostrap individually as needed. Note that Bootstrap’s functions, variables and mixins are required. See the boostrap.scss file for the full import stack.
+// Required
+// @import "~bootstrap/scss/functions";
+// @import "~bootstrap/scss/variables";
+// @import "~bootstrap/scss/mixins";
+
+// Optional
+// @import "~bootstrap/scss/reboot";
+// @import "~bootstrap/scss/type";
+// @import "~bootstrap/scss/images";
+// @import "~bootstrap/scss/code";
+// @import "~bootstrap/scss/grid";
+
+// Colors
+$shuBlue: rgba(0, 68, 136, 1);
+$shuBlueDark: rgba(00, 33, 66, 1);
+$body-color: $gray-800;

@@ -7,10 +7,14 @@
     define("PATH_GLOBAL_TEMPLATE_DIR", dirname(__DIR__) . "/templates");
 
     //NOTE: Define variable defaults
+    $application_header = null;
+    $application_header_nav = null;
     $application_nav = null;
+    $application_nav_position = null; // left or right if populated.
     $application_scripts = null;
     $application_styles = null;
     $content_aside = null;
+    $content_aside_position = null;
     $content_main = null;
     $framework_scripts = URI_GLOBAL_ASSETS . '/js/frameworks.min.js';
     $framework_styles = URI_GLOBAL_ASSETS . '/css/foundation.min.css';
@@ -24,9 +28,8 @@
     $page_metadata = null;
     $page_title = null;
     $page_title_displayed = null;
-    $template_nav = null;
-    $template_scripts = URI_GLOBAL_ASSETS . '/js/app.min.js';
-    $template_styles = URI_GLOBAL_ASSETS . '/css/app.css';
+    $template_scripts = URI_GLOBAL_ASSETS . '/js/bundle.js';
+    $template_styles = URI_GLOBAL_ASSETS . '/css/bundle.css';
 
     // NOTE: Include vendor specific "stuff"
     require_once dirname(__DIR__, 2) . '/vendor/autoload.php';

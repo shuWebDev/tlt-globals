@@ -1,0 +1,122 @@
+// Global Footer Styles.
+//
+// { some cool description about the global footer here. }
+//
+// No styleguide reference.
+
+#footer {
+	background: $shuBlueDark;
+	color: #90aecc;
+	font-size: 16px;
+	padding-bottom: 37px;
+	padding-top: 37px;
+
+	.title {
+		text-align: center;
+		color: $white;
+		display: block;
+		font-size: rem-calc(18);
+		font-weight: normal;
+		line-height: rem-calc(18);
+	}
+
+	.privacy {
+		font-size: rem-calc(14);
+	}
+
+	a {
+		color: #90aecc; //$light-blue;
+		font-weight: normal;
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+	address {
+		color: #90aecc; //$light-blue;
+		font-size: rem-calc(16);
+		font-style: normal;
+		line-height: rem-calc(20);
+		margin: 0;
+	}
+
+	.tel {
+		color: $white;
+		display: block;
+		font-size: rem-calc(15);
+		font-weight: normal;
+		line-height: rem-calc(18);
+		margin: 0 0 6px;
+	}
+
+	.terms {
+		color: #90aecc; //$light-blue;
+		font-size: rem-calc(12);
+		line-height: rem-calc(14);
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.vcard {
+		border: 0;
+		color: #90aecc; // $light-blue;
+		padding: 0;
+		list-style: none;
+		margin-left: 0;
+
+		.fn a {
+			color: $white;
+		}
+
+		.pn {
+			color: $white;
+		}
+	}
+
+	// NOTE: Resource List
+	.footer-links {
+		.title {
+			color: $white;
+		}
+
+		// NOTE: Make the list show up in two columns
+		.resource-list {
+			margin-top: 25px;
+			// Column count
+			-webkit-column-count: 2;
+			-moz-column-count: 2;
+			column-count: 2;
+
+			// Column gap
+			-webkit-column-gap: 30px;
+			-moz-column-gap: 30px;
+			column-gap: 30px;
+
+			// Column width
+			-webkit-column-width: 100px;
+			column-width: 100px;
+
+			color: #90aecc; // $light-blue;
+			list-style-type: none;
+			margin-left: 0;
+
+			@media only screen and (max-width: 767px) {
+				-webkit-column-count: 1;
+				-moz-column-count: 1;
+				column-gap: 1;
+			}
+
+			a {
+				color: #90aecc; // $light-blue;
+
+				&:hover {
+					color: $white;
+				}
+			}
+		}
+	}
+}
