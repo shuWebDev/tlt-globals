@@ -1,18 +1,21 @@
 <?php
     // Get the config
-    require_once(dirname(__DIR__) . "/globals/config/config.php");
+    require_once(__DIR__ . "/config/config.php");
 
     // NOTE: Set default values
-    $application_styles = '/_project-example/css/app.css';
-    $application_scripts = '/_project-example/js/app.js';
     $page_title = "Example Project Home Page";
 
     $application_header = "some content";
 
-    //* NOTE: Start custom code for main navigation here.
+    //* NOTE: Start custom code for header navigation here.
     ob_start();
     include "nav-header.php";
     $application_header_nav = ob_get_clean();
+
+    //* NOTE: Start custom code for main navigation here.
+    ob_start();
+    include "nav-main.php";
+    $application_nav = ob_get_clean();
 
     //* NOTE: Start custom code for the main content here.
     ob_start();
@@ -48,5 +51,5 @@
 
 
     // Include the layout template
-    require_once(PATH_GLOBAL_TEMPLATE_DIR . '/single-column-layout.tpl');
+    require_once(PATH_GLOBAL_TEMPLATE_DIR . '/two-column-layout-with-nav.tpl');
 ?>

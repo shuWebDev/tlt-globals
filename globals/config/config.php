@@ -7,10 +7,11 @@
     define("PATH_GLOBAL_TEMPLATE_DIR", dirname(__DIR__) . "/templates");
 
     //NOTE: Define variable defaults
+    $application_footer = null;
     $application_header = null;
     $application_header_nav = null;
     $application_nav = null;
-    $application_nav_position = null; // left or right if populated.
+    $application_nav_position = 'left'; // left or right if populated.
     $application_scripts = null;
     $application_styles = null;
     $content_aside = null;
