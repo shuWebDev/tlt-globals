@@ -7180,3 +7180,10 @@ header {
       #footer .footer-links .resource-list a:hover {
         color: #fff; }
 
+aside {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da; }
+
+main {
+  margin-bottom: 15px; }
+
