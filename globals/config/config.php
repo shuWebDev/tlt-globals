@@ -32,5 +32,5 @@
     $template_styles = URI_GLOBAL_ASSETS . '/css/bundle.css';
 
     // NOTE: Include vendor specific "stuff"
-    require_once dirname(__DIR__, 2) . '/vendor/autoload.php';
+    // require_once dirname(__DIR__, 2) . '/vendor/autoload.php';
 ?>
