@@ -14,9 +14,9 @@
     $application_nav_position = 'left'; // left or right if populated.
     $application_scripts = null;
     $application_styles = null;
-    $content_aside = null;
-    $content_aside_position = null;
-    $content_main = null;
+    $content_primary = null;
+    $content_secondary = null;
+    $content_secondary_position = null;
     $framework_scripts = URI_GLOBAL_ASSETS . '/js/frameworks.min.js';
     $framework_styles = URI_GLOBAL_ASSETS . '/css/foundation.min.css';
     $header_logo = URI_GLOBAL_ASSETS . '/images/university-logo-desktop.png';

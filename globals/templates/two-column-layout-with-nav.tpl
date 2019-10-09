@@ -18,8 +18,8 @@
         }
 
         // NOTE: Add a place holder for the content area.
-        if (!$content_main) {
-            $content_main = '<p class="alert alert-danger">Please add your content in the <code lang="php">$content_main</code> variable.</p>';
+        if (!$content_primary) {
+            $content_primary = '<p class="alert alert-danger">Please add your content in the <code lang="php">$content_primary</code> variable.</p>';
         }
 
         // NOTE: Add the <head></head> section.
