@@ -1,0 +1,39 @@
+{
+  "name": "tlt-globals",
+  "version": "2.0.0",
+  "description": "A static template library used to build any pages/sites that need to resemble shu.edu.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-php": "php -S 0.0.0.0:8000",
+    "watch": "webpack --watch --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shuWebDev/tlt-globals.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shuWebDev/tlt-globals/issues"
+  },
+  "homepage": "https://github.com/shuWebDev/tlt-globals#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "css-loader": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  }
+}
