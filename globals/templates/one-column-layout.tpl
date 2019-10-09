@@ -29,15 +29,19 @@
         ?>
 
         <main id="main" class="container">
-            <h2><?php
-                //! NOTE: This should be set in the project.
-                echo $page_title_displayed ;
-            ?></h2>
+            <section class="row">
+                <div id="content-primary" class="col">
+                    <h2 id="page-title"><?php
+                        //! NOTE: This should be set in the project.
+                        echo $page_title_displayed ;
+                    ?></h2>
 
-            <?php
-                //! NOTE: This data should come from the project.
-                echo $content_main;
-            ?>
+                    <?php
+                        //! NOTE: This data should come from the project.
+                        echo $content_primary;
+                    ?>
+                </div>
+            </section>
         </main>
 
         <?php require(PATH_GLOBAL_TEMPLATE_DIR . '/parts/footer-default.tpl') ?>

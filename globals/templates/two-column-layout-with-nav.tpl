@@ -36,32 +36,35 @@
         ?>
 
         <main id="main" class="container">
-            <h2><?php
-                //! NOTE: This should be set in the project.
-                echo $page_title_displayed ;
-            ?></h2>
-
             <section class="row">
-                <div class="col-md-2 <?php echo $nav_class ?>">
+                <div class="col-md-3 <?php echo $nav_class ?>">
                 <?php
                     //! NOTE: This data should come from the project.
                     echo $application_nav;
                 ?>
                 </div>
 
-                <div class="col-md-7">
-                <?php
-                    //! NOTE: This data should come from the project.
-                    echo $content_main;
-                ?>
-                </div>
+                <div class="col-md-9">
+                    <h2><?php
+                        //! NOTE: This should be set in the project.
+                        echo $page_title_displayed ;
+                    ?></h2>
 
-                <aside class="col-md-3">
-                <?php
-                    //! NOTE: This data should come from the project.
-                    echo $content_aside;
-                ?>
-                </aside>
+                    <div class="row">
+                        <div class="col-6">
+                        <?php
+                            //! NOTE: This data should come from the project.
+                            echo $content_primary;
+                        ?>
+                        </div>
+                        <div class="col-6">
+                        <?php
+                            //! NOTE: This data should come from the project.
+                            echo $content_secondary;
+                        ?>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
 
