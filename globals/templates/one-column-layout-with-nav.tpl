@@ -32,7 +32,7 @@
 
         <?php
             // NOTE: Add the global header
-            require(PATH_GLOBAL_TEMPLATE_DIR . '/parts/header-default.tpl');
+            require(PATH_GLOBAL_TEMPLATE_DIR . '/parts/header.tpl');
         ?>
 
         <main id="main" class="container">

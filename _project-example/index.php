@@ -4,13 +4,14 @@
 
     // NOTE: Set default values
     $page_title = "Example Project Home Page";
+    $header_type = "full";
 
     $application_header = "some content";
 
     //* NOTE: Start custom code for header navigation here.
     ob_start();
-    include "nav-header.php";
-    $application_header_nav = ob_get_clean();
+    include "navbar-header.php";
+    $application_navbar_content = ob_get_clean();
 
     //* NOTE: Start custom code for main navigation here.
     ob_start();
@@ -51,5 +52,5 @@
 
 
     // Include the layout template
-    require_once(PATH_GLOBAL_TEMPLATE_DIR . '/one-column-layout-with-nav.tpl');
+    require_once(PATH_GLOBAL_TEMPLATE_DIR . '/two-column-layout.tpl');
 ?>

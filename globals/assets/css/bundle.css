@@ -7081,11 +7081,14 @@ header {
   #header-main.alt {
     background: #004488; }
   #header-main .logo {
+    color: #fff;
     float: left;
     margin: 15px 0 18px 18px;
     position: relative;
+    text-transform: uppercase;
     z-index: 100; }
     #header-main .logo a {
+      color: #fff;
       display: inline-block;
       vertical-align: top; }
     #header-main .logo img {
