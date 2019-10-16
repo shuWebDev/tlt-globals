@@ -6,7 +6,7 @@
     $page_title = "Example Project Home Page";
     $header_type = "full";
 
-    $application_header = "some content";
+    // $application_header = "some content";
 
     //* NOTE: Start custom code for header navigation here.
     ob_start();

@@ -31,12 +31,29 @@
     <section id="applicationHeader" class="row">
         <div class="col-md-12">
             <?php
+                // NOTE: Add the application header.
+                if ( $application_header ) {
+                    echo $application_header;
+                }
+
                 // var_dump($application_header_nav);
                 // NOTE: Include a nav if there is one.
                 if ( $application_header_nav ) {
-                    echo $application_header_nav;
-                }
             ?>
+                <nav class="navbar navbar-expand-lg navbar">
+                    <div class="container">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#application-header-nav" aria-controls="application-header-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="application-header-nav">
+                        <?php
+                                echo $application_header_nav;
+                            }
+                        ?>
+                        </div>
+                    </div>
+                </nav>
         </div>
     </section>
 
