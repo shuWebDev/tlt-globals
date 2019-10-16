@@ -8,3 +8,14 @@
 main {
 	margin-bottom: 15px;
 }
+
+// NOTE: Hide accessibility links from the normal display.
+.accessibility {
+	position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 0;
+    overflow: hidden;
+    // color: #000;
+}

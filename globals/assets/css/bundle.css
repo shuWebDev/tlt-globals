@@ -7190,3 +7190,11 @@ aside {
 main {
   margin-bottom: 15px; }
 
+.accessibility {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 0;
+  overflow: hidden; }
+
