@@ -10,12 +10,12 @@
 
     //* NOTE: Start custom code for header navigation here.
     ob_start();
-    include "header-navbar.php";
+    include $project_doc_root . "header-navbar.php";
     $application_navbar_content = ob_get_clean();
 
     //* NOTE: Start custom code for main navigation here.
     ob_start();
-    include "nav-main.php";
+    include $project_doc_root . "nav-main.php";
     $application_nav = ob_get_clean();
 
     //* NOTE: Start custom code for the main content here.
