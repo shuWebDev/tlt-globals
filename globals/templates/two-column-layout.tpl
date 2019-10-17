@@ -35,19 +35,17 @@
             ?></h2>
 
             <section class="row">
-                <div class="row">
-                    <div class="col-6">
-                    <?php
-                        //! NOTE: This data should come from the project.
-                        echo $content_primary;
-                    ?>
-                    </div>
-                    <div class="col-6">
-                    <?php
-                        //! NOTE: This data should come from the project.
-                        echo $content_secondary;
-                    ?>
-                    </div>
+                <div class="col-6">
+                <?php
+                    //! NOTE: This data should come from the project.
+                    echo $content_primary;
+                ?>
+                </div>
+                <div class="col-6">
+                <?php
+                    //! NOTE: This data should come from the project.
+                    echo $content_secondary;
+                ?>
                 </div>
             </section>
         </main>
