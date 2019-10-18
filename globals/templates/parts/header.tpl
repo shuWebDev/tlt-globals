@@ -15,11 +15,11 @@
         if ( $header_type == "full" ) {
             echo '<div class="col col-md-auto">
                 <nav class="nav">
-                    <a class="nav-link" href="#">Academics</a>
-                    <a class="nav-link" href="#">Admissions</a>
-                    <a class="nav-link" href="#">Catholic Mission</a>
-                    <a class="nav-link" href="#">Athletics</a>
-                    <a class="nav-link" href="#">Alumni</a>
+                    <a class="nav-link" href="https://www.shu.edu/academics">Academics</a>
+                    <a class="nav-link" href="https://admissions.shu.edu">Admissions</a>
+                    <a class="nav-link" href="https://www.shu.edu/catholic-mission">Catholic Mission</a>
+                    <a class="nav-link" href="https://www.shupirates.com">Athletics</a>
+                    <a class="nav-link" href="https://alumni.shu.edu">Alumni</a>
                 </nav>
             </div>';
         }
