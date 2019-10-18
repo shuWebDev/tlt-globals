@@ -52,5 +52,5 @@
 
 
     // Include the layout template
-    require_once(PATH_GLOBAL_TEMPLATE_DIR . '/two-column-layout.tpl');
+    require_once(PATH_GLOBAL_TEMPLATE_DIR . '/two-column.tpl');
 ?>

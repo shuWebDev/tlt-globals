@@ -22,6 +22,7 @@
     $application_styles = null;
 
     // NOTE: Define content specific variable defaults
+    $content_jumbotron = null;
     $content_primary = null;
     $content_secondary = null;
     $content_secondary_position = null;
