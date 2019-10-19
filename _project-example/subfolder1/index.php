@@ -6,18 +6,6 @@
     $page_title = "Example Project Home Page";
     $header_type = "full";
 
-    // $application_header = "some content";
-
-    //* NOTE: Start custom code for header navigation here.
-    ob_start();
-    include $project_doc_root . "header-navbar.php";
-    $application_navbar_content = ob_get_clean();
-
-    //* NOTE: Start custom code for main navigation here.
-    ob_start();
-    include $project_doc_root . "nav-main.php";
-    $application_nav = ob_get_clean();
-
     //* NOTE: Start custom code for the main content here.
     ob_start();
 

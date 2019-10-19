@@ -27,8 +27,8 @@
     }
 ?>
 
-    <section id="applicationHeader" class="row">
-        <div class="col-md-12">
+    <section id="header-application" class="row">
+        <div class="col">
         <?php
             // NOTE: Add the application header.
             if ( $application_header ) {
@@ -39,18 +39,17 @@
             // NOTE: Include a nav if there is one.
             if ( $application_header_nav ) {
         ?>
-            <nav class="navbar navbar-expand-lg navbar">
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#application-header-nav" aria-controls="application-header-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
+            <nav class="navbar <?php echo $application_navbar_size . ' ' . $application_navbar_colorScheme . ' ' . $application_navbar_bgColor ?>">
+                <a class="navbar-brand" href="#">Site Title Variable</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-application-nav" aria-controls="header-application-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <div class="collapse navbar-collapse" id="application-header-nav">
-                    <?php
-                            echo $application_header_nav;
-                        }
-                    ?>
-                    </div>
+                <div class="collapse navbar-collapse" id="header-application-nav">
+                <?php
+                        echo $application_header_nav;
+                    }
+                ?>
                 </div>
             </nav>
         </div>

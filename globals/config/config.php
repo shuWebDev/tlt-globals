@@ -14,10 +14,9 @@
     $application_header_nav = null;
     $application_nav = null;
     $application_nav_position = 'left'; // left or right if populated.
-    $application_navbar_content = null;
     $application_navbar_bgColor = 'bg-dark';
     $application_navbar_colorScheme = 'navbar-dark'; // 'navbar-light' or 'navbar-dark' [https://getbootstrap.com/docs/4.0/components/navbar/#color-schemes]
-    $application_navbar_size = 'navbar-expand-lg';
+    $application_navbar_size = 'navbar-expand-md';
     $application_scripts = null;
     $application_styles = null;
 

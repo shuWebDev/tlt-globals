@@ -6,8 +6,6 @@ header {
 #header-main {
 	// background: rgba(0, 68, 136, 0.7);
 	background: rgba(0, 68, 136, 1);
-	z-index: 100;
-	position: relative;
 
 	&.alt {
 		background: $shuBlue;
@@ -64,5 +62,14 @@ header {
 				// padding: 15px 10px 0;
 			}
 		}
+	}
+}
+
+#header-application {
+	background-color: $shuBlueDark;
+	color: $white;
+
+	nav {
+		background-color: inherit;
 	}
 }
