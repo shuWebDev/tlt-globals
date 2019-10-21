@@ -13,7 +13,6 @@
     <?php echo $extra_metadata ?>
 
     <!-- Global CSS -->
-    <!-- <link href="<?php echo $framework_styles ?>" media="screen" rel="stylesheet" type="text/css"> -->
     <link href="<?php echo $template_styles ?>" media="screen" rel="stylesheet" type="text/css">
 
     <!-- Application CSS -->

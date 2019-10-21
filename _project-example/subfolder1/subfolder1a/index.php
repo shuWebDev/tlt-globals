@@ -6,8 +6,6 @@
     $page_title = "Example Project Home Page";
     $header_type = "full";
 
-    // $application_header = "some content";
-
     //* NOTE: Start custom code for the main content here.
     ob_start();
 
@@ -28,7 +26,7 @@
     //* NOTE: End custom code for primary content here.
     $content_primary = ob_get_clean();
 
-    //* NOTE: Start custom code for the secondary content here.
+    //* NOTE: Start custom code for the aside content here.
     ob_start();
     ?>
 
@@ -39,18 +37,8 @@
     //* NOTE: End custom code for secondary content here.
     $content_secondary = ob_get_clean();
 
-    //* NOTE: Start custom code for the aside content here.
-    ob_start();
-    ?>
-
-    <h3>What's This?</h3>
-    <p>This is generic HTML content that is in an <code>&lt;aside&gt;&lt;/aside&gt;</pre></code> container.</p>
-
-    <?php
-    //* NOTE: End custom code for secondary content here.
-    $content_aside = ob_get_clean();
 
 
     // Include the layout template
-    require_once(PATH_GLOBAL_TEMPLATE_DIR . '/one-column-with-aside.tpl');
+    require_once(PATH_GLOBAL_TEMPLATE_DIR . '/two-column.tpl');
 ?>

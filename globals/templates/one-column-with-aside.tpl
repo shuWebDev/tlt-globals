@@ -10,16 +10,14 @@
             $page_title = $page_title . ' - ';
         }
 
-        // NOTE: Determine which side the nav should be on.
-        if ($application_nav_position != 'left') {
-            $nav_class = 'order-last';
-        } else {
-            $nav_class = 'order-first';
+        // NOTE: Add a place holder for the content area.
+        if (!$content_primary) {
+            $content_primary = '<p class="alert alert-danger">Please add your content in the <code lang="php">$content_primary</code> variable.</p>';
         }
 
-        // NOTE: Add a place holder for the content area.
-        if (!$content_main) {
-            $content_main = '<p class="alert alert-danger">Please add your content in the <code lang="php">$content_main</code> variable.</p>';
+        // NOTE: Inject the aside content within the primary content.
+        if ($content_aside) { //! NOTE: This data should come from the project.
+            $content_primary = '<aside>' . $content_aside . '</aside>' . $content_primary ;
         }
 
         // NOTE: Add the <head></head> section.
@@ -32,7 +30,7 @@
 
         <?php
             // NOTE: Add the global header
-            require(PATH_GLOBAL_TEMPLATE_DIR . '/parts/header-default.tpl');
+            require(PATH_GLOBAL_TEMPLATE_DIR . '/parts/header.tpl');
         ?>
 
         <main id="main" class="container">
@@ -42,26 +40,12 @@
             ?></h2>
 
             <section class="row">
-                <div class="col-md-2 <?php echo $nav_class ?>">
+                <div class="col">
                 <?php
                     //! NOTE: This data should come from the project.
-                    echo $application_nav;
+                    echo $content_primary;
                 ?>
                 </div>
-
-                <div class="col-md-7">
-                <?php
-                    //! NOTE: This data should come from the project.
-                    echo $content_main;
-                ?>
-                </div>
-
-                <aside class="col-md-3">
-                <?php
-                    //! NOTE: This data should come from the project.
-                    echo $content_aside;
-                ?>
-                </aside>
             </section>
         </main>
 

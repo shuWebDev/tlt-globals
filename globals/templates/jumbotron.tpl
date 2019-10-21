@@ -11,8 +11,13 @@
         }
 
         // NOTE: Add a place holder for the content area.
-        if (!$content_main) {
-            $content_main = '<p class="alert alert-danger">Please add your content in the <code lang="php">$content_main</code> variable.</p>';
+        if (!$content_primary) {
+            $content_primary = '<p class="alert alert-danger">Please add your content in the <code lang="php">$content_primary</code> variable.</p>';
+        }
+
+        // NOTE: Add a place holder for the jumbotron area.
+        if (!$content_jumbotron) {
+            $content_jumbotron = '<p class="alert alert-danger">Please add your content in the <code lang="php">$content_jumbotron</code> variable.</p>';
         }
 
         // NOTE: Add the <head></head> section.
@@ -25,29 +30,25 @@
 
         <?php
             // NOTE: Add the global header
-            require(PATH_GLOBAL_TEMPLATE_DIR . '/parts/header-default.tpl');
+            require(PATH_GLOBAL_TEMPLATE_DIR . '/parts/header.tpl');
         ?>
 
-        <main id="main" class="container">
-            <h2><?php
-                //! NOTE: This should be set in the project.
-                echo $page_title_displayed ;
-            ?></h2>
-
-            <section class="row">
-                <div class="col-md-8">
-                <?php
-                    //! NOTE: This data should come from the project.
-                    echo $content_main;
-                ?>
+        <main id="main">
+            <section class="jumbotron">
+                <div class="container">
+                    <?php echo $content_jumbotron ?>
                 </div>
+            </section>
 
-                <aside class="col-md-4">
-                <?php
-                    //! NOTE: This data should come from the project.
-                    echo $content_aside;
-                ?>
-                </aside>
+            <section class="container">
+                <div class="row">
+                    <div id="content-primary" class="col">
+                        <?php
+                            //! NOTE: This data should come from the project.
+                            echo $content_primary;
+                        ?>
+                    </div>
+                </div>
             </section>
         </main>
 
