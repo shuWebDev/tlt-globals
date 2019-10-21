@@ -8,7 +8,7 @@ header {
 	background: rgba(0, 68, 136, 1);
 
 	&.alt {
-		background: $shuBlue;
+		background: $primary;
 	}
 
 	.logo {
@@ -66,10 +66,10 @@ header {
 }
 
 #header-application {
-	background-color: $shuBlueDark;
+	background-color: $dark;
 	color: $white;
 
 	nav {
-		background-color: inherit;
+		background-color: $secondary;
 	}
 }
