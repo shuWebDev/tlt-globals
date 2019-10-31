@@ -1,3 +1,21 @@
 body {
-	background-color: lavenderblush;
+	/* background-color: lavenderblush; */
 }
+
+aside {
+	/* background-color: pink;
+	border: 3px dotted purple; */
+}
+/*
+#header-application {
+	background-color: pink;
+	color: blue;
+}
+
+#header-application nav {
+	background-color: transparent !important;
+}
+
+#header-application nav a {
+	color: blue;
+} */

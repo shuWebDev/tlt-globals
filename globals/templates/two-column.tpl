@@ -11,8 +11,8 @@
         }
 
         // NOTE: Add a place holder for the content area.
-        if (!$content_main) {
-            $content_main = '<p class="alert alert-danger">Please add your content in the <code lang="php">$content_main</code> variable.</p>';
+        if (!$content_primary) {
+            $content_primary = '<p class="alert alert-danger">Please add your content in the <code lang="php">$content_primary</code> variable.</p>';
         }
 
         // NOTE: Add the <head></head> section.
@@ -25,7 +25,7 @@
 
         <?php
             // NOTE: Add the global header
-            require(PATH_GLOBAL_TEMPLATE_DIR . '/parts/header-default.tpl');
+            require(PATH_GLOBAL_TEMPLATE_DIR . '/parts/header.tpl');
         ?>
 
         <main id="main" class="container">
@@ -34,10 +34,20 @@
                 echo $page_title_displayed ;
             ?></h2>
 
-            <?php
-                //! NOTE: This data should come from the project.
-                echo $content_main;
-            ?>
+            <section class="row">
+                <div class="col-6">
+                <?php
+                    //! NOTE: This data should come from the project.
+                    echo $content_primary;
+                ?>
+                </div>
+                <div class="col-6">
+                <?php
+                    //! NOTE: This data should come from the project.
+                    echo $content_secondary;
+                ?>
+                </div>
+            </section>
         </main>
 
         <?php require(PATH_GLOBAL_TEMPLATE_DIR . '/parts/footer-default.tpl') ?>

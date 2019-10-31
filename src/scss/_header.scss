@@ -6,21 +6,22 @@ header {
 #header-main {
 	// background: rgba(0, 68, 136, 0.7);
 	background: rgba(0, 68, 136, 1);
-	z-index: 100;
-	position: relative;
 
 	&.alt {
-		background: $shuBlue;
+		background: $primary;
 	}
 
 	.logo {
+		color: $white;
 		float: left;
 		margin: 15px 0 18px 18px;
 		position: relative;
+		text-transform: uppercase;
 		z-index: 100;
 
 		a {
-			display: inline-block;
+		color: $white;
+		display: inline-block;
 			vertical-align: top;
 		}
 
@@ -35,10 +36,21 @@ header {
 			margin: 0;
 		}
 	}
+
+	nav {
+
+		.nav-link {
+			color: $white;
+			font-size: rem-calc(23);
+			line-height: rem-calc(28);
+			// margin: 0 0 34px 0;
+			// padding: 0 17px 30px;
+		}
+	}
 }
 
 // page logo styles */
-.programs {
+.project {
 	.logo {
 		img {
 			max-width: 300px;
@@ -50,5 +62,14 @@ header {
 				// padding: 15px 10px 0;
 			}
 		}
+	}
+}
+
+#header-application {
+	background-color: $dark;
+	color: $white;
+
+	nav {
+		background-color: $secondary;
 	}
 }
