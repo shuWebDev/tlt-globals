@@ -7097,10 +7097,14 @@ header {
         display: block;
         padding: 18px 20px;
         margin: 0; } }
+  #header-main nav .nav {
+    position: relative;
+    top: 57%; }
   #header-main nav .nav-link {
     color: #fff;
     font-size: 1.4375rem;
-    line-height: 1.75rem; }
+    line-height: 1.75rem;
+    padding: 0 17px 34px; }
 
 .project .logo img {
   max-width: 300px;
@@ -7114,6 +7118,9 @@ header {
 #header-application {
   background-color: #002142;
   color: #fff; }
+  #header-application h2 {
+    padding: 15px 0;
+    margin-bottom: 0; }
   #header-application nav {
     background-color: #6c757d; }
 
@@ -7190,6 +7197,16 @@ header {
       color: #90aecc; }
       #footer .footer-links .resource-list a:hover {
         color: #fff; }
+  #footer .social-icons {
+    list-style: none;
+    padding-left: 0; }
+    #footer .social-icons li {
+      display: inline-block;
+      width: 31.3%; }
+    #footer .social-icons svg.svg-inline--fa {
+      fill: #90aecc;
+      max-width: 35px;
+      padding-bottom: 30px; }
 
 aside {
   background-color: #e9ecef;

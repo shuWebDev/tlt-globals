@@ -119,4 +119,19 @@
 			}
 		}
 	}
+	.social-icons {
+		list-style: none;
+		padding-left: 0;
+		li {
+			display: inline-block;
+			width: 31.3%;
+		}
+		svg {
+			&.svg-inline--fa {
+				fill: #90aecc;
+				max-width: 35px;
+				padding-bottom: 30px;
+			}
+		}
+	}
 }
