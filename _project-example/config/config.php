@@ -18,17 +18,20 @@
     $application_styles = $project_root . 'css/app.css'; // path to "local" css
 
     //* NOTE: Start custom code for application header here.
-    ob_start();
-    include $project_doc_root . "header.php";
-    $application_header = ob_get_clean();
+    //ob_start();
+    // include $project_doc_root . "header.php";
+    // $application_header = ob_get_clean();
+    $application_header = file_get_contents( $project_doc_root . 'header.php' );
 
     //* NOTE: Start custom code for application header nav here.
-    ob_start();
-    include $project_doc_root . "header-navbar.php";
-    $application_header_nav = ob_get_clean();
+    // ob_start();
+    // include $project_doc_root . "header-navbar.php";
+    // $application_header_nav = ob_get_clean();
+    $application_header_nav = file_get_contents( $project_doc_root . 'header-navbar.php' );
 
     //* NOTE: Start custom code for main navigation here.
-    ob_start();
-    include $project_doc_root . "nav-main.php";
-    $application_nav = ob_get_clean();
+    // ob_start();
+    // include $project_doc_root . "nav-main.php";
+    // $application_nav = ob_get_clean();
+    $application_nav = file_get_contents( $project_doc_root . 'nav-main.php' );
 ?>
