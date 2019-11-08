@@ -9,9 +9,10 @@
     $application_header = null;
 
     //* NOTE: Start custom code for the main content here.
-    ob_start();
-    ?>
-
+    //ob_start();
+    
+    $content_primary = <<<END_PRIMARY
+    
     <div class="row">
         <div class="col-md-4">
             <h2>Heading</h2>
@@ -29,37 +30,39 @@
             <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
         </div>
     </div>
-
-    <?php
-
+END_PRIMARY;
+    
     //* NOTE: End custom code for primary content here.
-    $content_primary = ob_get_clean();
+    //$content_primary = ob_get_clean();
 
     //* NOTE: Start custom code for the aside content here.
-    ob_start();
-    ?>
-
+    //ob_start();
+    
+    $content_secondary = <<<END_SECONDARY
+    
     <!-- <h3>What's This?</h3>
     <p>This is generic HTML content that is in a second column.</p> -->
 
-    <?php
-    //* NOTE: End custom code for secondary content here.
-    $content_secondary = ob_get_clean();
+END_SECONDARY;
 
+    //* NOTE: End custom code for secondary content here.
+    //$content_secondary = ob_get_clean();
 
     //* NOTE: Start custom code for the aside content here.
-    ob_start();
-    ?>
+    //ob_start();
+    
+    $content_jumbotron = <<<END_JUMBO
+    
         <h1 class="display-3">Hello, world!</h1>
 
         <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
 
         <p><a class="btn btn-primary btn-lg" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/" role="button">Learn more »</a></p>
+END_JUMBO;
 
 
-    <?php
     //* NOTE: End custom code for secondary content here.
-    $content_jumbotron = ob_get_clean();
+    //$content_jumbotron = ob_get_clean();
 
 
 
