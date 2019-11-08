@@ -2,6 +2,9 @@
     // require_once(dirname(dirname(__DIR__)) . "/globals/config/config.php");
     require_once($_SERVER['DOCUMENT_ROOT'] . "/globals/config/config.php");
 
+    // parse project-specific settings for DB, etc. and put them into array $config;
+    $config = parse_ini_file( './config.ini', true );
+
     // var_dump($_SERVER);
     // var_dump(dirname(dirname(__DIR__)) . "/globals/config/config.php");
 
