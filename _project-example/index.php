@@ -9,46 +9,50 @@
     // $application_header = "some content";
 
     //* NOTE: Start custom code for the main content here.
-    ob_start();
-
+    //  ob_start();
+    $content_primary = '';
     $x = 5985;
     // var_dump($x);
-    echo '<p>The value of $x is: ' . $x . '</p>';
+    $content_primary .= '<p>The value of $x is: ' . $x . '</p>';
 
     $cars = array("Volvo","BMW","Toyota");
     // var_dump($cars);
-    echo '<p>The second value of $cars is: ' . $cars[1] . '</p>';
+    $content_primary .= '<p>The second value of $cars is: ' . $cars[1] . '</p>';
 
-    echo '<ul>';
+    $content_primary .=  '<ul>';
     foreach ($cars as $car) {
-        echo "<li class=\"car\">$car</li>";
+        $content_primary .= "<li class=\"car\">$car</li>";
     }
     echo '</ul>';
 
     //* NOTE: End custom code for primary content here.
-    $content_primary = ob_get_clean();
+    // $content_primary = ob_get_clean();
 
     //* NOTE: Start custom code for the secondary content here.
-    ob_start();
-    ?>
+    // ob_start();
+    $content_secondary = <<<END_SECONDARY
 
     <h3>What's This?</h3>
     <p>This is generic HTML content that is in a second column.</p>
 
+END_SECONDARY;
+
     <?php
     //* NOTE: End custom code for secondary content here.
-    $content_secondary = ob_get_clean();
+    // $content_secondary = ob_get_clean();
 
     //* NOTE: Start custom code for the aside content here.
-    ob_start();
-    ?>
+    // ob_start();
+    $content_aside = <<<END_ASIDE
 
     <h3>What's This?</h3>
     <p>This is generic HTML content that is in an <code>&lt;aside&gt;&lt;/aside&gt;</pre></code> container.</p>
 
+END_ASIDE;
+
     <?php
     //* NOTE: End custom code for secondary content here.
-    $content_aside = ob_get_clean();
+    // $content_aside = ob_get_clean();
 
 
     // Include the layout template
