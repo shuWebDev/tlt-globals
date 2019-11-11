@@ -4,6 +4,7 @@
 
      // Auth if necessary
     if ( $saml ) {
+        // additional tests or overrides go here
         
         /* -*- coding: utf-8 -*-
          * Copyright 2015 Okta, Inc.
