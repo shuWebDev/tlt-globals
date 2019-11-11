@@ -5,6 +5,9 @@
     // parse project-specific settings for DB, etc. and put them into array $config;
     $config = parse_ini_file( './config.ini', true );
 
+    // if this app uses SAML/Okta authentication, set value below to true;
+    $saml = false;
+
     // var_dump($_SERVER);
     // var_dump(dirname(dirname(__DIR__)) . "/globals/config/config.php");
 
