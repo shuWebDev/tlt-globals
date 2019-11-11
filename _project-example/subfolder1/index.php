@@ -2,6 +2,32 @@
     // Get the config
     require_once($_SERVER['DOCUMENT_ROOT'] . "/_project-example/config/config.php");
 
+     // Auth if necessary
+    if ( $saml ) {
+        
+        /* -*- coding: utf-8 -*-
+         * Copyright 2015 Okta, Inc.
+         *
+         * Licensed under the Apache License, Version 2.0 (the "License");
+         * you may not use this file except in compliance with the License.
+         * You may obtain a copy of the License at
+         *
+         *     http://www.apache.org/licenses/LICENSE-2.0
+         *
+         * Unless required by applicable law or agreed to in writing, software
+         * distributed under the License is distributed on an "AS IS" BASIS,
+         * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+         * See the License for the specific language governing permissions and
+         * limitations under the License.
+         */
+        require('/var/simplesamlphp/lib/_autoload.php');
+        $as = new \SimpleSAML\Auth\Simple($config['samlauth']);
+        $as->requireAuth();
+        $attributes = $as->getAttributes();
+        // in case you need to look at them...
+        // print_r($attributes);
+    }
+
     // NOTE: Set default values
     $page_title = "Example Project Home Page";
     $header_type = "full";
