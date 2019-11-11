@@ -67,7 +67,7 @@
 
 END_SECONDARY;
 
-    <?php
+    
     //* NOTE: End custom code for secondary content here.
     // $content_secondary = ob_get_clean();
 
@@ -80,7 +80,7 @@ END_SECONDARY;
 
 END_ASIDE;
 
-    <?php
+    
     //* NOTE: End custom code for secondary content here.
     // $content_aside = ob_get_clean();
 
