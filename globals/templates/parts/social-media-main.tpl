@@ -1,12 +1,14 @@
 <h3 class="title">Follow #SetonHall</h3>
 
-<ul class="small-block-grid-3 social-icons">
-    <li class="right-aligned"><a href="https://www.facebook.com/setonhall"><i class="fa fa-facebook-official fa-2x"> </i></a></li>
-    <li><a href="https://twitter.com/setonhall"><i class="fa fa-twitter-square fa-2x"> </i></a></li>
-    <li class="left-aligned"><a href="https://www.linkedin.com/edu/seton-hall-university-18877"><i class="fa fa-linkedin fa-2x"> </i></a></li>
-    <li class="right-aligned"><a href="https://www.youtube.com/user/setonhall"><i class="fa fa-youtube-play fa-2x"> </i></a></li>
-    <li><a href="https://www.flickr.com/photos/setonhall"><i class="fa fa-flickr fa-2x"> </i></a></li>
-    <li class="left-aligned" ><a href="https://instagram.com/setonhall/"><i class="fa fa-instagram fa-2x"> </i></a></li>
+<ul class="social-icons">
+    <li class="text-right"><a href="https://www.facebook.com/setonhall"><?php echo $facebook_icon ?></a></li>
+	<li class="text-center"><a href="https://twitter.com/setonhall"><?php echo $twitter_icon ?></a></li>
+	<li><a href="https://www.linkedin.com/edu/seton-hall-university-18877"><?php echo $linkedin_icon ?></a></li>
+	<li class="text-right"><a href="https://www.youtube.com/user/setonhall"><?php echo $youtube_icon ?></a></li>
+	<li class="text-center"><a href="https://www.flickr.com/photos/setonhall"><?php echo $flickr_icon ?></a></li>
+	<li><a href="https://instagram.com/setonhall/"><?php echo $instagram_icon ?></a></li>
 </ul>
 
 <p class="text-center"><a href="https://www.shu.edu/social">www.shu.edu/social</a></p>
+
+<!-- <img src="<?php echo $social_icons ?>facebook-square-brands.svg" alt="Facebook" /> -->

@@ -38,13 +38,16 @@ header {
 	}
 
 	nav {
+		.nav {
+			position: relative;
+			top: 57%;
+		}
 
 		.nav-link {
 			color: $white;
 			font-size: rem-calc(23);
 			line-height: rem-calc(28);
-			// margin: 0 0 34px 0;
-			// padding: 0 17px 30px;
+			padding: 0 17px 34px;
 		}
 	}
 }
@@ -68,6 +71,11 @@ header {
 #header-application {
 	background-color: $dark;
 	color: $white;
+
+	h2 {
+		padding: 15px 0;
+		margin-bottom: 0;
+	}
 
 	nav {
 		background-color: $secondary;
