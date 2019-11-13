@@ -7224,16 +7224,3 @@ main {
   height: 0;
   overflow: hidden; }
 
-aside {
-  box-shadow: inset 5px 0 5px -5px #002142;
-  color: #495057;
-  float: right;
-  font-style: italic;
-  margin-left: .5rem;
-  padding-left: .5rem;
-  position: relative;
-  top: 1.5rem;
-  width: 40%; }
-  aside p {
-    margin: .5rem; }
-
