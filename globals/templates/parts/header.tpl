@@ -8,7 +8,7 @@
         }
 
         echo '<section id="header-main" class="row align-items-end">
-            <div class="col">
+            <div class="col-md">
                 <strong class="logo"><a href="https://www.shu.edu/">' . $logo . '</a></strong>
             </div>';
 
