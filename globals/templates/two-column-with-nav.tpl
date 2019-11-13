@@ -51,13 +51,13 @@
                     ?></h2>
 
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-md-6">
                         <?php
                             //! NOTE: This data should come from the project.
                             echo $content_primary;
                         ?>
                         </div>
-                        <div class="col-6">
+                        <div class="col-md-6">
                         <?php
                             //! NOTE: This data should come from the project.
                             echo $content_secondary;

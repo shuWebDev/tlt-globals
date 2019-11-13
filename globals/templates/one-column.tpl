@@ -30,7 +30,7 @@
 
         <main id="main" class="container">
             <section class="row">
-                <div id="content-primary" class="col">
+                <div id="content-primary" class="col-md">
                     <h2 id="page-title"><?php
                         //! NOTE: This should be set in the project.
                         echo $page_title_displayed ;

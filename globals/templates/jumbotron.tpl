@@ -42,7 +42,7 @@
 
             <section class="container">
                 <div class="row">
-                    <div id="content-primary" class="col">
+                    <div id="content-primary" class="col-md">
                         <?php
                             //! NOTE: This data should come from the project.
                             echo $content_primary;
