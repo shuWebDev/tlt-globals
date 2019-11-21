@@ -14,7 +14,7 @@
 
         if ( $header_type == "full" ) {
             echo '<div class="col col-md-auto">
-                <nav class="nav">
+                <nav class="nav navbar">
                     <a class="nav-link" href="https://www.shu.edu/academics">Academics</a>
                     <a class="nav-link" href="https://admissions.shu.edu">Admissions</a>
                     <a class="nav-link" href="https://www.shu.edu/catholic-mission">Catholic Mission</a>

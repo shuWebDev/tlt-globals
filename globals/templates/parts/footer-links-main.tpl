@@ -1,5 +1,5 @@
 <section class="footer-links">
-    <ul class="resource-list">
+    <ul class="resource-list list-unstyled">
         <li><a href="https://www.shu.edu/offices/student-services">Student Services</a></li>
         <li><a href="https://www.shu.edu/parents">Parents and Families</a></li>
         <li><a href="https://www.shu.edu/offices/career-center">Career Center</a></li>

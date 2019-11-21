@@ -17,7 +17,8 @@
 
         // NOTE: Inject the aside content within the primary content.
         if ($content_aside) { //! NOTE: This data should come from the project.
-            $content_primary = '<aside>' . $content_aside . '</aside>' . $content_primary ;
+            $content_primary = $content_primary ;
+            $content_secondary = '<aside class="col-md-4 bg-light">' . $content_aside . '</aside>' ;
         }
 
         // NOTE: Add the <head></head> section.
@@ -46,6 +47,10 @@
                     echo $content_primary;
                 ?>
                 </div>
+                <?php
+                    //! NOTE: This data should come from the project.
+                    echo $content_secondary;
+                ?>
             </section>
         </main>
 

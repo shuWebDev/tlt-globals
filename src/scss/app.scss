@@ -5,6 +5,10 @@
 @import 'footer'; // Footer Styles.
 @import 'aside'; // Aside Styles.
 
+body {
+	font-family: "Times New Roman", Times, serif;
+}
+
 main {
 	margin-bottom: 15px;
     min-height: 65vh;
@@ -19,20 +23,4 @@ main {
     height: 0;
     overflow: hidden;
     // color: #000;
-}
-
-aside {
-    box-shadow: inset 5px 0 5px -5px $dark;
-    color: $gray-700;
-    float: right;
-    font-style: italic;
-    margin-left: .5rem;
-    padding-left: .5rem;
-    position: relative;
-    top: 1.5rem;
-    width: 40%;
-
-    p {
-        margin: .5rem;
-    }
 }

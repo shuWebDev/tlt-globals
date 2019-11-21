@@ -7090,7 +7090,8 @@ header {
       display: inline-block;
       vertical-align: top; }
     #header-main .logo img {
-      display: block; }
+      width: 100%;
+      height: auto; }
     @media only screen and (max-width: 941px) {
       #header-main .logo {
         float: none;
@@ -7209,8 +7210,14 @@ header {
       padding-bottom: 30px; }
 
 aside {
-  background-color: #e9ecef;
-  border: 1px solid #ced4da; }
+  color: #495057;
+  font-style: italic;
+  top: 1.5rem; }
+  aside p {
+    margin: .5rem; }
+
+body {
+  font-family: "Times New Roman", Times, serif; }
 
 main {
   margin-bottom: 15px;
@@ -7223,17 +7230,4 @@ main {
   width: 1px;
   height: 0;
   overflow: hidden; }
-
-aside {
-  box-shadow: inset 5px 0 5px -5px #002142;
-  color: #495057;
-  float: right;
-  font-style: italic;
-  margin-left: .5rem;
-  padding-left: .5rem;
-  position: relative;
-  top: 1.5rem;
-  width: 40%; }
-  aside p {
-    margin: .5rem; }
 
