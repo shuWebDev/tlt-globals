@@ -2,26 +2,29 @@
 <?php
     if ($header_type != "application-only") {
         if ($header_type !== "minimal") {
-            $logo = '<img src="' . $header_logo . '" alt="' . $header_logo_alt_text . '" />';
+            $logo = '<img class="logo" src="' . $header_logo . '" alt="' . $header_logo_alt_text . '" />';
         } else {
             $logo = 'Seton Hall University'; //? Maybe this should be a single line logo instead of text.
         }
 
         echo '<section id="header-main" class="row align-items-end">
-            <div class="col-md">
-                <strong class="logo"><a href="https://www.shu.edu/">' . $logo . '</a></strong>
-            </div>';
+        <div class="col-md-3">
+            <a class="navbar-brand" href="https://www.shu.edu/">' . $logo . '</a>
+        </div>';
 
         if ( $header_type == "full" ) {
-            echo '<div class="col col-md-auto">
-                <nav class="nav navbar">
-                    <a class="nav-link" href="https://www.shu.edu/academics">Academics</a>
-                    <a class="nav-link" href="https://admissions.shu.edu">Admissions</a>
-                    <a class="nav-link" href="https://www.shu.edu/catholic-mission">Catholic Mission</a>
-                    <a class="nav-link" href="https://www.shupirates.com">Athletics</a>
-                    <a class="nav-link" href="https://alumni.shu.edu">Alumni</a>
-                </nav>
-            </div>';
+            echo '<div class="col-md-9">
+            <nav class="top-nav">
+              <ul class="nav justify-content-end">
+                <li class="nav-item"><a class="nav-link" href="https://www.shu.edu/academics">Academics</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://admissions.shu.edu">Admissions</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.shu.edu/catholic-mission">Catholic Mission</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.shupirates.com">Athletics</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://alumni.shu.edu">Alumni</a></li>
+              </ul>
+            </nav>
+</div>
+';
         }
         echo "</section>";
     }

@@ -18,16 +18,12 @@ header {
 		position: relative;
 		text-transform: uppercase;
 		z-index: 100;
+		max-width: 334px;
 
 		a {
 		color: $white;
 		display: inline-block;
 			vertical-align: top;
-		}
-
-		img {
-			width: 100%;
-			height: auto;
 		}
 
 		@media only screen and (max-width: 941px) {
@@ -38,18 +34,17 @@ header {
 		}
 	}
 
-	nav {
-		.nav {
-			position: relative;
-			top: 57%;
+	.top-nav {
+		@media only screen and (max-width: 600px) {
+			display: none;
 		}
+	}
 
-		.nav-link {
-			color: $white;
-			font-size: rem-calc(23);
-			line-height: rem-calc(28);
-			padding: 0 17px 34px;
-		}
+	.nav-link {
+		color: $white;
+		font-size: rem-calc(23);
+		line-height: rem-calc(28);
+		padding: 0 17px 34px;
 	}
 }
 

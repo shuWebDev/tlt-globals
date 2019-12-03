@@ -7084,24 +7084,22 @@ header {
     margin: 15px 0 18px 18px;
     position: relative;
     text-transform: uppercase;
-    z-index: 100; }
+    z-index: 100;
+    max-width: 334px; }
     #header-main .logo a {
       color: #fff;
       display: inline-block;
       vertical-align: top; }
-    #header-main .logo img {
-      width: 100%;
-      height: auto; }
     @media only screen and (max-width: 941px) {
       #header-main .logo {
         float: none;
         display: block;
         padding: 18px 20px;
         margin: 0; } }
-  #header-main nav .nav {
-    position: relative;
-    top: 57%; }
-  #header-main nav .nav-link {
+  @media only screen and (max-width: 600px) {
+    #header-main .top-nav {
+      display: none; } }
+  #header-main .nav-link {
     color: #fff;
     font-size: 1.4375rem;
     line-height: 1.75rem;
@@ -7222,6 +7220,10 @@ body {
 main {
   margin-bottom: 15px;
   min-height: 65vh; }
+
+img {
+  width: 100%;
+  height: auto; }
 
 .accessibility {
   position: absolute;
