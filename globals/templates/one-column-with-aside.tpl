@@ -41,7 +41,7 @@
             ?></h2>
 
             <section class="row">
-                <div class="col-md">
+                <div class="col-md-8">
                 <?php
                     //! NOTE: This data should come from the project.
                     echo $content_primary;
