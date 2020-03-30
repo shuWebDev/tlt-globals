@@ -4,4 +4,4 @@
 ?>
 
 <script src="<?php echo $template_scripts ?>"></script>
-<script src="<?php echo $application_scripts ?>"></script>
+<?php echo $application_scripts ?>
