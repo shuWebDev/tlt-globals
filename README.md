@@ -28,6 +28,10 @@ During development, you can start [a local PHP server on port 8000](http://127.0
 ```shell
 $ npm run start-php
 ```
+### Project Updates
+When a change is made to any part of this, run a git pull into your local development directory. This will grab the entire current branch. 
+
+Then, FTP the /globals/ directory up to the server root of the live server.
 
 ### Directory Structures
 
