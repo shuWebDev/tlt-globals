@@ -43,7 +43,7 @@
             if ( $application_header_nav ) {
         ?>
             <nav class="navbar <?php echo $application_navbar_size . ' ' . $application_navbar_colorScheme . ' ' . $application_navbar_bgColor ?>">
-                <a class="navbar-brand" href="#">Site Title Variable</a>
+                <a class="navbar-brand" href="<? echo $site_title_link ?>"><?php echo $site_title_variable ?></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-application-nav" aria-controls="header-application-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
