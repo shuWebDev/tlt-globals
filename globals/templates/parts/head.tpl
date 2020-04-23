@@ -15,12 +15,11 @@
     <!-- Global CSS -->
     <link href="<?php echo $template_styles ?>" media="screen" rel="stylesheet" type="text/css">
 
-    <!-- Application CSS -->
+    <!-- Application CSS 
     <link href="<?php echo $application_styles ?>" media="screen" rel="stylesheet" type="text/css">
-
-    <!-- Application JS -->
-    <!-- <script src="/globals/assets/js/bundle.js"></script> -->
-
+    -->
+    <?php echo $application_styles ?>
+    
     <script>var shu = {};</script>
 
     <noscript>

@@ -17,10 +17,27 @@
 
     $application_footer = null;
     $application_nav_position = 'left'; // left or right if populated.
-    $application_scripts = $project_root . 'js/app.js'; // path to "local" scripts
-    $application_styles = $project_root . 'css/app.css'; // path to "local" css
-
+    
+    //apply scripts
+    $application_script_array = array();
+    //add as many of these as necessary...
+    $application_script_array[] = $project_root . 'js/app.js'; 
+    $application_scripts = '';
+    foreach ($application_script_array as $application_script) {
+        $application_scripts .= '<script src="' . $application_script . '"></script>' . "\n";
+    }
+    
+    $application_style_array = array();
+    //add as many of these as necessary...
+    $application_style_array[] = $project_root . 'css/app.css'; 
+    $application_styles = '';
+    foreach ($application_style_array as $application_style) {
+        $application_styles .= '<link href="' . $application_style . '" media="screen" rel="stylesheet" type="text/css">' . "\n";
+    }
     //* NOTE: Start custom code for application header here.
+    $site_title_link = ''; //large link in navbar
+    $site_title_variable = ''; //text of large link
+        
     //ob_start();
     // include $project_doc_root . "header.php";
     // $application_header = ob_get_clean();
