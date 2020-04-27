@@ -3,7 +3,7 @@
     require_once($_SERVER['DOCUMENT_ROOT'] . "/globals/config/config.php");
 
     // parse project-specific settings for DB, etc. and put them into array $config;
-    $config = parse_ini_file( './config.ini', true );
+    $config = parse_ini_file( 'config.ini', true );
 
     // if this app uses SAML/Okta authentication, set value below to true;
     $saml = false;
