@@ -7244,6 +7244,8 @@ header {
   #header-application h2 {
     padding: 15px;
     margin-bottom: 0; }
+  #header-application h3 {
+	padding-left: 15px; }
   #header-application nav {
     background-color: #6c757d; }
 
