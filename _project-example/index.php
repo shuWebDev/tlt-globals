@@ -53,7 +53,7 @@
     foreach ($cars as $car) {
         $content_primary .= "<li class=\"car\">$car</li>";
     }
-    echo '</ul>';
+    $content_primary .= '</ul>';
 
     //* NOTE: End custom code for primary content here.
     // $content_primary = ob_get_clean();
